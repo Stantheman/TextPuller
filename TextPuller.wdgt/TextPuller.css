@@ -1,0 +1,53 @@
+/*
+TextPuller.css
+Stan Schwertly
+www.schwertly.com
+*/
+
+body {
+	margin: 0;
+    background-color: white;
+}
+
+#taskText {
+    background-color: white;
+    height:auto;
+    width:auto;
+}
+
+.taskText pre {
+	color: black;
+    opacity: 1.0;
+	top: 47px;
+	left: 20px;
+}
+
+.flip {
+	position:absolute;
+	bottom: 14px;
+	right: 14px;
+	width:13px;
+	height:13px;
+}
+
+#flip {
+	opacity:0;
+	background: url(file:///System/Library/WidgetResources/ibutton/black_i.png) no-repeat top left;
+	z-index:8000;
+}
+
+#fliprollie {
+	display:none;
+	opacity:0.25;
+	background: url(file:///System/Library/WidgetResources/ibutton/black_rollie.png) no-repeat top left;
+	z-index:7999;
+
+}
+
+#front {
+	display: block;
+} 
+
+#back {
+	display: none;
+} 

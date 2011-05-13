@@ -1,0 +1,39 @@
+<!--
+TextPuller.html
+Stan Schwertly
+www.schwertly.com
+-->
+
+<html>
+
+<head>
+
+<style type="text/css">
+	@import "TextPuller.css";
+</style>
+
+<script type='text/javascript' src='TextPuller.js' charset='utf-8'/>
+
+</head>
+
+<body onload='setup();'>	
+
+    <div id="front" onmousemove='mousemove(event);' onmouseout='mouseexit(event);'>
+    
+		<div id="taskText" style="height:100%"></div>
+		<div class='flip' id='fliprollie'></div>
+		<div class='flip' id='flip' onclick='showPrefs(event);' onmouseover='enterflip(event);' onmouseout='exitflip(event)';></div>
+
+    </div>
+
+    <div id="back">
+		<center>
+            <pre><b>Location to pull from: </b></pre>
+            <input type="text" name="url" size="40" id="urlInput">
+            <input type="button" name="done" value="Save" onclick='hidePrefs()' />
+        </center>
+    </div>
+
+</body>
+
+</html>
